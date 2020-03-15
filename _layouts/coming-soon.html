@@ -6,7 +6,7 @@ layout: compress
 <html lang="en-US" class="no-js">
 	<head>
 	
-		<title>{{ page.title }} | {{ site.title }}</title>
+		<title>{{ page.title }} | {{ site.description }}</title>
 		
 		<!-- Meta Data -->
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
@@ -14,7 +14,9 @@ layout: compress
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<meta name="author" content="Erilisdesign.com">
-		
+		{% if jekyll.environment == "production" %}
+			{% include gtag1.html %}
+		{% endif %}
 		<!-- CSS Global Compulsory -->
 		<link rel="stylesheet" href="assets/splash/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/splash/css/style.css">
@@ -53,10 +55,14 @@ layout: compress
 		<link rel="apple-touch-icon" href="assets/splash/images/apple-touch-icon.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="assets/splash/images/apple-touch-icon-72x72.png">
 		<link rel="apple-touch-icon" sizes="114x114" href="assets/splash/images/apple-touch-icon-114x114.png">
-
+		{% if jekyll.environment == "production" %}
+			{% include gtag1.html %}
+		{% endif %}
 	</head>
 	<body>
-	
+		{% if jekyll.environment == "production" %}
+			{% include gtag1.html %}
+		{% endif %}
 		<div id="preloader">
 			<div id="loading-animation"></div>
 		</div>
