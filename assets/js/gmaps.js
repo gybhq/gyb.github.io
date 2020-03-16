@@ -3,7 +3,7 @@ function initialize() {
   	var mapCanvas = document.getElementById('map');
 
     var mapOptions = {
-      center: new google.maps.LatLng(40.755595, -73.987628),
+      center: new google.maps.LatLng(4.6638593, -74.0638085),
       disableDefaultUI: true,
       zoom: 16,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -14,23 +14,23 @@ function initialize() {
 
     //Create marker
     var marker = new google.maps.Marker({
-      position: new google.maps.LatLng(40.755585, -73.987628),
+      position: new google.maps.LatLng(4.6638593, -74.0638085),
       map: map,
-      title: 'Mozzarella',
+      title: 'Ginger &amp; Bourbon',
       icon: 'assets/images/map-marker.png'
  	});
 
  	//Create ribbon
     var ribbon = new google.maps.Marker({
-      position: new google.maps.LatLng(40.755585, -73.981585),
+      position: new google.maps.LatLng(4.6638593, -74.0638085),
       map: map,
       icon: 'assets/images/map-ribbon.png'
  	});
 
     //Map marker info
     var contentString = '<div id="map-info">'+
-      '<h2>Mozzarella</h2>'+
-      '<p style="text-align:left; margin:0;"><strong>Mozzarella</strong>, has the <strong>best food</strong> delivery service in town, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit maiores, incidunt quidem natus. Ut dolorum deleniti reiciendis tenetur illum, beatae cum, harum laborum, nisi omnis nulla laboriosam, ipsam nemo consectetur..</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit maiores, incidunt quidem natus. Ut dolorum deleniti reiciendis tenetur illum, beatae cum, harum laborum, nisi omnis nulla laboriosam, ipsam nemo consectetur..</p>'+
+      '<h2>Ginger &amp; Bourbon</h2>'+
+      '<p style="text-align:left; margin:0;"><strong>Ginger &amp; Bourbon</strong>, has the <strong>best food</strong> delivery service in town, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit maiores, incidunt quidem natus. Ut dolorum deleniti reiciendis tenetur illum, beatae cum, harum laborum, nisi omnis nulla laboriosam, ipsam nemo consectetur..</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit maiores, incidunt quidem natus. Ut dolorum deleniti reiciendis tenetur illum, beatae cum, harum laborum, nisi omnis nulla laboriosam, ipsam nemo consectetur..</p>'+
       '</div>';
 
     //Add info to marker 

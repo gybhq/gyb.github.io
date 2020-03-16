@@ -677,7 +677,7 @@ header ul.main-slider h2 {
 /* 9. SHOWS */
 /***************************************/
 #shows {
-	background: url('../images/dots-texture.png') repeat, url('../images/show-bg.jpg') center;
+	background: url('../images/dots-texture.png') repeat, url('../images/show-bg1.jpg') center;
 	padding-top: 100px;
 	position: relative;
 	min-height: 510px;
